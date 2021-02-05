@@ -1,0 +1,13 @@
+{
+  "team": ["I got it!", "Need boost!", "Take the shot!", "Defending..."],
+  "compliments": ["Nice shot!", "Great pass!", "Thanks!", "What a save!"],
+  "reactions": ["OMG!", "Noooo!", "Wow!", "Close one!"],
+  "apologies": ["$#@%!", "No problem.", "Whoops...", "Sorry!"],
+  "postGame": ["gg", "Well played.", "That was fun!", "Rematch!"],
+  "preGame": [
+    "Good luck!",
+    "Have fun!",
+    "Get ready...",
+    "This is Rocket League!"
+  ]
+}
