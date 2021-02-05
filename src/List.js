@@ -1,15 +1,15 @@
-import content from "./content";
 export const List = ({
   type,
   open,
   handleOpen,
   showButton,
   sendMessage,
+  content,
   children,
 }) => {
   return (
     <>
-      {open && <Content type={type} sendMessage={sendMessage} />}
+      {open && <Content content={content} sendMessage={sendMessage} />}
       {!open && showButton && (
         <button onClick={() => handleOpen(type)}>{children}</button>
       )}
@@ -17,9 +17,7 @@ export const List = ({
   );
 };
 
-const Content = ({ type, sendMessage }) => {
-  const contentList = content[type];
-
+const Content = ({ content, sendMessage }) => {
   return (
     <div
       style={{
@@ -32,39 +30,39 @@ const Content = ({ type, sendMessage }) => {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <button
           onClick={() => {
-            sendMessage(contentList[0]);
+            sendMessage(content[0]);
           }}
         >
-          {contentList[0]}
+          {content[0]}
         </button>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div>
           <button
             onClick={() => {
-              sendMessage(contentList[1]);
+              sendMessage(content[1]);
             }}
           >
-            {contentList[1]}
+            {content[1]}
           </button>
         </div>
         <div>
           <button
             onClick={() => {
-              sendMessage(contentList[2]);
+              sendMessage(content[2]);
             }}
           >
-            {contentList[2]}
+            {content[2]}
           </button>
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <button
           onClick={() => {
-            sendMessage(contentList[3]);
+            sendMessage(content[3]);
           }}
         >
-          {contentList[3]}
+          {content[3]}
         </button>
       </div>
     </div>

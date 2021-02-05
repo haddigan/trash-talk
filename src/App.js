@@ -3,6 +3,7 @@ import { ChatWindow } from "./ChatWindow";
 import { List } from "./List";
 import { PlayerName } from "./PlayerName";
 import { useCountdown } from "./useCountdown";
+import content from "./content.json";
 
 export function App() {
   const [messageList, setMessageList] = useState([]);
@@ -27,6 +28,7 @@ export function App() {
     setOpenSection(section);
   };
 
+  const [team, compliments, reactions, apologies] = content;
   return (
     <div
       className="App"
@@ -37,6 +39,7 @@ export function App() {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <List
             type="team"
+            content={team}
             open={openSection === "team"}
             handleOpen={handleOpenSection}
             showButton={!openSection}
@@ -48,6 +51,7 @@ export function App() {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <List
             type="compliments"
+            content={compliments}
             open={openSection === "compliments"}
             handleOpen={handleOpenSection}
             showButton={!openSection}
@@ -57,6 +61,7 @@ export function App() {
           </List>
           <List
             type="reactions"
+            content={reactions}
             open={openSection === "reactions"}
             handleOpen={handleOpenSection}
             showButton={!openSection}
@@ -68,6 +73,7 @@ export function App() {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <List
             type="apologies"
+            content={apologies}
             open={openSection === "apologies"}
             handleOpen={handleOpenSection}
             showButton={!openSection}
