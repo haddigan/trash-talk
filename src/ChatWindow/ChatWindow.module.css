@@ -1,0 +1,28 @@
+.chatWindow {
+  color: white;
+  background: black;
+  height: 150px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: -1px 4px 12px 0px rgba(2, 56, 92, 0.75);
+  -webkit-box-shadow: -1px 4px 12px 0px rgba(2, 56, 92, 0.75);
+  -moz-box-shadow: -1px 4px 12px 0px rgba(2, 56, 92, 0.75);
+}
+
+.chatList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 150px;
+  padding: 0.5em;
+}
+
+.playerName {
+  color: orange;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.statusMessage {
+  color: palegoldenrod;
+}
