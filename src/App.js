@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ChatWindow } from "./ChatWindow";
 import { List } from "./List";
 import { PlayerName } from "./PlayerName";
-import { useCountdown } from "./useCountdown";
+import { useCountdown } from "./app/useCountdown";
 import content from "./content.json";
 
 export function App() {
