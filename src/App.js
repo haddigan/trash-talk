@@ -3,6 +3,7 @@ import { ChatWindow } from "./ChatWindow";
 import { List } from "./List";
 import { PlayerName } from "./PlayerName";
 import { useCountdown } from "./app/useCountdown";
+import { DirectionalPad } from "./DirectionalPad";
 import content from "./content.json";
 
 export function App() {
@@ -35,8 +36,8 @@ export function App() {
       style={{ display: "flex", justifyContent: "space-evenly" }}
     >
       <PlayerName handleSetName={setName} />
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+      <DirectionalPad
+        upButton={
           <List
             type="team"
             content={team}
@@ -47,8 +48,8 @@ export function App() {
           >
             🔼
           </List>
-        </div>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        }
+        leftButton={
           <List
             type="compliments"
             content={compliments}
@@ -59,6 +60,8 @@ export function App() {
           >
             ◀️
           </List>
+        }
+        rightButton={
           <List
             type="reactions"
             content={reactions}
@@ -69,8 +72,8 @@ export function App() {
           >
             ▶️
           </List>
-        </div>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        }
+        bottomButton={
           <List
             type="apologies"
             content={apologies}
@@ -81,8 +84,8 @@ export function App() {
           >
             🔽
           </List>
-        </div>
-      </div>
+        }
+      />
       <div>
         <ChatWindow content={messageList} />
       </div>

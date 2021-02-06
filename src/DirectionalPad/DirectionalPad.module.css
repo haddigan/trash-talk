@@ -1,0 +1,9 @@
+.dPadContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.dPadFlex {
+  display: flex;
+  justify-content: center;
+}
