@@ -21,6 +21,7 @@
   color: orange;
   font-weight: 700;
   text-transform: uppercase;
+  padding-right: 0.5em;
 }
 
 .statusMessage {

@@ -18,7 +18,7 @@ export const ChatWindow = ({ content = [] }) => {
             )}
             {!isStatusMessage && (
               <>
-                <span className={styles.playerName}>{name}</span>:{" "}
+                <span className={styles.playerName}>{name}</span>
                 <span className={styles.messageText}>{text}</span>
               </>
             )}
