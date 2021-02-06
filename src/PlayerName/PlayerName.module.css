@@ -1,0 +1,28 @@
+.playerName {
+  display: flex;
+}
+
+.nameFormControl {
+  color: white;
+  background: black;
+  line-height: 1.6em;
+  border: 2px solid lightskyblue;
+  border-radius: 8px;
+  font-size: 1.1em;
+  padding: 0.2em 0.5em;
+}
+
+.nameFormControl:focus {
+  border: 2px solid lightsteelblue;
+}
+
+.nameButton {
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+  color: orange;
+}
+
+.nameButton:active {
+  background: darkslategray;
+  color: darkorange;
+}
