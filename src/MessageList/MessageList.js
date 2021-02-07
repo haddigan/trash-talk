@@ -1,10 +1,14 @@
-import styles from "./List.module.css";
+import styles from "./MessageList.module.css";
 import { keyIcons } from "../content";
 
 const { upButton, leftButton, rightButton, downButton } = keyIcons;
 const arrowIcons = [upButton, leftButton, rightButton, downButton];
 
-export const List = ({ content, type, onSendMessage: handleSendMessage }) => {
+export const MessageList = ({
+  content,
+  type,
+  onSendMessage: handleSendMessage,
+}) => {
   return (
     <div className={styles.list}>
       <h2 className={styles.quickChatHeading}>Quick Chat</h2>

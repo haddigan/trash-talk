@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import { useCountdown } from "../app/useCountdown";
 import { ContentButton } from "../ContentButton";
-import { List } from "../List";
+import { MessageList } from "../MessageList";
 
 import {
   REACTIONS,
@@ -34,7 +34,7 @@ export const ChatControl = ({ onSendMessage }) => {
   return (
     <div>
       {visibleList && (
-        <List
+        <MessageList
           type={visibleList}
           content={contentLists[visibleList]}
           onSendMessage={handleSendMessage}

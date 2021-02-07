@@ -1,10 +1,10 @@
 import React from "react";
-import { List } from "./List";
+import { MessageList } from "./MessageList";
 import { contentLists, REACTIONS } from "../content";
 
 export default {
-  component: List,
-  title: "List",
+  component: MessageList,
+  title: "MessageList",
   argTypes: {
     onSendMessage: {
       action: "Sent message",
@@ -12,7 +12,7 @@ export default {
   },
 };
 
-const Template = (args) => <List {...args} />;
+const Template = (args) => <MessageList {...args} />;
 
 export const Default = Template.bind({});
 Default.args = { content: contentLists[REACTIONS], type: REACTIONS };
