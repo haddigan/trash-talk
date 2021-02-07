@@ -5,6 +5,11 @@ import { contentLists, REACTIONS } from "../content";
 export default {
   component: List,
   title: "List",
+  argTypes: {
+    onSendMessage: {
+      action: "Sent message",
+    },
+  },
 };
 
 const Template = (args) => <List {...args} />;

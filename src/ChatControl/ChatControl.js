@@ -41,32 +41,24 @@ export const ChatControl = ({ onSendMessage }) => {
         />
       )}
       {!visibleList && (
-        <DirectionalPad
-          upButton={
-            <ContentButton
-              keyName="upButton"
-              onClick={() => handleOpenSection(TEAM)}
-            />
-          }
-          leftButton={
-            <ContentButton
-              keyName="leftButton"
-              onClick={() => handleOpenSection(REACTIONS)}
-            />
-          }
-          rightButton={
-            <ContentButton
-              keyName="rightButton"
-              onClick={() => handleOpenSection(COMPLIMENTS)}
-            />
-          }
-          downButton={
-            <ContentButton
-              keyName="downButton"
-              onClick={() => handleOpenSection(APOLOGIES)}
-            />
-          }
-        />
+        <DirectionalPad>
+          <ContentButton
+            keyName="upButton"
+            onClick={() => handleOpenSection(TEAM)}
+          />
+          <ContentButton
+            keyName="leftButton"
+            onClick={() => handleOpenSection(REACTIONS)}
+          />
+          <ContentButton
+            keyName="rightButton"
+            onClick={() => handleOpenSection(COMPLIMENTS)}
+          />
+          <ContentButton
+            keyName="downButton"
+            onClick={() => handleOpenSection(APOLOGIES)}
+          />
+        </DirectionalPad>
       )}
     </div>
   );
