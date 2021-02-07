@@ -1,7 +1,7 @@
-export const TEAM = "team";
-export const COMPLIMENTS = "compliments";
-export const APOLOGIES = "apologies";
-export const REACTIONS = "reactions";
+export const TEAM = "Team";
+export const COMPLIMENTS = "Compliments";
+export const APOLOGIES = "Apologies";
+export const REACTIONS = "Reactions";
 
 export const UP_BUTTON = "upButton";
 export const DOWN_BUTTON = "downButton";
@@ -14,6 +14,13 @@ export const keyBindings = [
   [RIGHT_BUTTON, COMPLIMENTS],
   [DOWN_BUTTON, APOLOGIES],
 ];
+
+export const keyIcons = {
+  [UP_BUTTON]: "🔼",
+  [LEFT_BUTTON]: "◀️",
+  [RIGHT_BUTTON]: "▶️",
+  [DOWN_BUTTON]: "🔽",
+};
 
 export const contentLists = {
   [TEAM]: ["I got it!", "Need boost!", "Take the shot!", "Defending..."],
