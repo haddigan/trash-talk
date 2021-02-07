@@ -1,19 +1,22 @@
+import classNames from "classnames/bind";
 import styles from "./DirectionalPad.module.css";
+
+const cx = classNames.bind(styles);
 
 export const DirectionalPad = ({
   upButton,
   leftButton,
   rightButton,
-  bottomButton,
+  downButton,
 }) => {
   return (
-    <div className={styles.dPadContainer}>
-      <div className={styles.dPadFlex}>{upButton}</div>
-      <div className={styles.dPadFlex}>
+    <div className={cx("dPadContainer")}>
+      <div className={cx("dPadFlex")}>{upButton}</div>
+      <div className={cx("dPadFlex")}>
         {leftButton}
         {rightButton}
       </div>
-      <div className={styles.dPadFlex}>{bottomButton}</div>
+      <div className={cx("dPadFlex")}>{downButton}</div>
     </div>
   );
 };
