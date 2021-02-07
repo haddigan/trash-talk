@@ -1,5 +1,8 @@
 import styles from "./List.module.css";
-const arrowIcons = ["🔼", "◀️", "▶️", "🔽"];
+import { keyIcons } from "../content";
+
+const { upButton, leftButton, rightButton, downButton } = keyIcons;
+const arrowIcons = [upButton, leftButton, rightButton, downButton];
 
 export const List = ({ content, type, onSendMessage }) => {
   return (
