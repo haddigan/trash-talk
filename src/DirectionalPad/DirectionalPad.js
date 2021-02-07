@@ -1,3 +1,4 @@
+import React from "react";
 import classNames from "classnames/bind";
 import styles from "./DirectionalPad.module.css";
 
@@ -10,13 +11,11 @@ export const DirectionalPad = ({
   downButton,
 }) => {
   return (
-    <div className={cx("dPadContainer")}>
-      <div className={cx("dPadFlex")}>{upButton}</div>
-      <div className={cx("dPadFlex")}>
-        {leftButton}
-        {rightButton}
-      </div>
-      <div className={cx("dPadFlex")}>{downButton}</div>
+    <div className={cx("buttonContainer")}>
+      <div className={cx("button", "upButton")}>{upButton}</div>
+      <div className={cx("button", "leftButton")}>{leftButton}</div>
+      <div className={cx("button", "rightButton")}>{rightButton}</div>
+      <div className={cx("button", "downButton")}>{downButton}</div>
     </div>
   );
 };

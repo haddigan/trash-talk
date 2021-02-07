@@ -1,6 +1,6 @@
 export const List = ({
   type,
-  open,
+  isOpen,
   handleOpen,
   showButton,
   sendMessage,
@@ -9,8 +9,8 @@ export const List = ({
 }) => {
   return (
     <>
-      {open && <Content content={content} sendMessage={sendMessage} />}
-      {!open && showButton && (
+      {isOpen && <Content content={content} sendMessage={sendMessage} />}
+      {!isOpen && showButton && (
         <button onClick={() => handleOpen(type)}>{children}</button>
       )}
     </>
