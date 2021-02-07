@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trash-talk/static/css/main.9c8fa658.chunk.css",
+    "main.js": "/trash-talk/static/js/main.27e5b2c1.chunk.js",
+    "main.js.map": "/trash-talk/static/js/main.27e5b2c1.chunk.js.map",
+    "runtime-main.js": "/trash-talk/static/js/runtime-main.ec10c077.js",
+    "runtime-main.js.map": "/trash-talk/static/js/runtime-main.ec10c077.js.map",
+    "static/js/2.1118f31c.chunk.js": "/trash-talk/static/js/2.1118f31c.chunk.js",
+    "static/js/2.1118f31c.chunk.js.map": "/trash-talk/static/js/2.1118f31c.chunk.js.map",
+    "static/js/3.4929a254.chunk.js": "/trash-talk/static/js/3.4929a254.chunk.js",
+    "static/js/3.4929a254.chunk.js.map": "/trash-talk/static/js/3.4929a254.chunk.js.map",
+    "index.html": "/trash-talk/index.html",
+    "static/css/main.9c8fa658.chunk.css.map": "/trash-talk/static/css/main.9c8fa658.chunk.css.map",
+    "static/js/2.1118f31c.chunk.js.LICENSE.txt": "/trash-talk/static/js/2.1118f31c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec10c077.js",
+    "static/js/2.1118f31c.chunk.js",
+    "static/css/main.9c8fa658.chunk.css",
+    "static/js/main.27e5b2c1.chunk.js"
+  ]
+}
