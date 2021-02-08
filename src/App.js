@@ -36,6 +36,16 @@ export function App() {
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <div style={{ flexGrow: "1", marginRight: "2em", maxWidth: "50vw" }}>
           <ChatWindow content={messageList} />
+          <h2
+            style={{
+              fontFamily: '"Orbitron", sans-serif',
+              color: "white",
+              textTransform: "uppercase",
+              marginTop: "2em",
+            }}
+          >
+            Use arrow keys to send messages
+          </h2>
         </div>
         <div style={{ minWidth: "40vw" }}>
           <ChatControl onSendMessage={handleSendMessage} />
