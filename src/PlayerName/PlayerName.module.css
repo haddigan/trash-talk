@@ -1,4 +1,4 @@
-.playerName {
+.playerNameForm {
   display: flex;
 }
 
@@ -25,4 +25,13 @@
 .nameButton:active {
   background: darkslategray;
   color: darkorange;
+}
+
+.heading {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: white;
+  padding: 0;
+  margin: 0 0 1em 0;
 }
