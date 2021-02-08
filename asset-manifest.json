@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/trash-talk/static/css/main.d1813d2d.chunk.css",
-    "main.js": "/trash-talk/static/js/main.0dd43ac8.chunk.js",
-    "main.js.map": "/trash-talk/static/js/main.0dd43ac8.chunk.js.map",
+    "main.js": "/trash-talk/static/js/main.5db338fa.chunk.js",
+    "main.js.map": "/trash-talk/static/js/main.5db338fa.chunk.js.map",
     "runtime-main.js": "/trash-talk/static/js/runtime-main.ec10c077.js",
     "runtime-main.js.map": "/trash-talk/static/js/runtime-main.ec10c077.js.map",
     "static/js/2.1118f31c.chunk.js": "/trash-talk/static/js/2.1118f31c.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ec10c077.js",
     "static/js/2.1118f31c.chunk.js",
     "static/css/main.d1813d2d.chunk.css",
-    "static/js/main.0dd43ac8.chunk.js"
+    "static/js/main.5db338fa.chunk.js"
   ]
 }
