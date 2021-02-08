@@ -1,6 +1,6 @@
 import React from "react";
 import { MessageList } from "./MessageList";
-import { contentLists, REACTIONS } from "../content";
+import { contentLists, REACTIONS } from "../app/content";
 
 export default {
   component: MessageList,

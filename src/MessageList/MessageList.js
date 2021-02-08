@@ -5,7 +5,7 @@ import {
   LEFT_BUTTON,
   RIGHT_BUTTON,
   DOWN_BUTTON,
-} from "../content";
+} from "../app/content";
 import { useEffect } from "react";
 
 const { upButton, leftButton, rightButton, downButton } = keyIcons;

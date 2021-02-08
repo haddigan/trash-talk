@@ -16,7 +16,7 @@ import {
   RIGHT_BUTTON,
   DOWN_BUTTON,
   contentLists,
-} from "../content";
+} from "../app/content";
 
 export const ChatControl = ({ onSendMessage }) => {
   const [visibleList, setVisibleList] = useState(null);

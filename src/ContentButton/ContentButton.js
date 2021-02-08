@@ -1,4 +1,4 @@
-import { keyIcons } from "../content";
+import { keyIcons } from "../app/content";
 import styles from "./ContentButton.module.css";
 
 export const ContentButton = ({ onClick: handleClick, keyName }) => (

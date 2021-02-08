@@ -1,5 +1,5 @@
 import { ContentButton } from "./ContentButton";
-import { keyIcons } from "../content";
+import { keyIcons } from "../app/content";
 
 export default {
   component: ContentButton,
