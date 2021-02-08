@@ -24,9 +24,22 @@ export function App() {
         justifyContent: "space-evenly",
       }}
     >
-      <PlayerName handleSetName={setName} />
-      <ChatWindow content={messageList} />
-      <ChatControl onSendMessage={handleSendMessage} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "2em",
+        }}
+      >
+        <PlayerName handleSetName={setName} />
+      </div>
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <div style={{ flexGrow: "1", marginRight: "2em", maxWidth: "50vw" }}>
+          <ChatWindow content={messageList} />
+        </div>
+
+        <ChatControl onSendMessage={handleSendMessage} />
+      </div>
     </div>
   );
 }
