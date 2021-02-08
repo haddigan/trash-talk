@@ -37,8 +37,9 @@ export function App() {
         <div style={{ flexGrow: "1", marginRight: "2em", maxWidth: "50vw" }}>
           <ChatWindow content={messageList} />
         </div>
-
-        <ChatControl onSendMessage={handleSendMessage} />
+        <div style={{ minWidth: "40vw" }}>
+          <ChatControl onSendMessage={handleSendMessage} />
+        </div>
       </div>
     </div>
   );
