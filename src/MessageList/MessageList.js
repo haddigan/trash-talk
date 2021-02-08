@@ -8,8 +8,12 @@ import {
 } from "../app/content";
 import { useEffect } from "react";
 
-const { upButton, leftButton, rightButton, downButton } = keyIcons;
-const arrowIcons = [upButton, leftButton, rightButton, downButton];
+const arrowIcons = [
+  keyIcons[UP_BUTTON],
+  keyIcons[LEFT_BUTTON],
+  keyIcons[RIGHT_BUTTON],
+  keyIcons[DOWN_BUTTON],
+];
 
 export const MessageList = ({
   content,
