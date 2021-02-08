@@ -1,5 +1,12 @@
 import styles from "./MessageList.module.css";
-import { keyIcons } from "../content";
+import {
+  keyIcons,
+  UP_BUTTON,
+  LEFT_BUTTON,
+  RIGHT_BUTTON,
+  DOWN_BUTTON,
+} from "../content";
+import { useEffect } from "react";
 
 const { upButton, leftButton, rightButton, downButton } = keyIcons;
 const arrowIcons = [upButton, leftButton, rightButton, downButton];
@@ -9,6 +16,31 @@ export const MessageList = ({
   type,
   onSendMessage: handleSendMessage,
 }) => {
+  const handlers = content.map((message) => {
+    return () => handleSendMessage(message);
+  });
+
+  useEffect(() => {
+    const keyHandler = ({ key }) => {
+      switch (key) {
+        case UP_BUTTON:
+          return handlers[0]();
+        case LEFT_BUTTON:
+          return handlers[1]();
+        case RIGHT_BUTTON:
+          return handlers[2]();
+        case DOWN_BUTTON:
+          return handlers[3]();
+        default:
+          return null;
+      }
+    };
+    document.addEventListener("keydown", keyHandler);
+    return () => {
+      document.removeEventListener("keydown", keyHandler);
+    };
+  }, [handlers]);
+
   return (
     <div className={styles.list}>
       <h2 className={styles.quickChatHeading}>Quick Chat</h2>
@@ -18,10 +50,7 @@ export const MessageList = ({
         : content.map((text, i) => {
             return (
               <div key={i}>
-                <button
-                  onClick={() => handleSendMessage(text)}
-                  className={styles.button}
-                >
+                <button onClick={handlers[i]} className={styles.button}>
                   <span className={styles.icon}>{arrowIcons[i]}</span>
                   <span>{text}</span>
                 </button>

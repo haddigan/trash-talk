@@ -3,10 +3,10 @@ export const COMPLIMENTS = "Compliments";
 export const APOLOGIES = "Apologies";
 export const REACTIONS = "Reactions";
 
-export const UP_BUTTON = "upButton";
-export const DOWN_BUTTON = "downButton";
-export const LEFT_BUTTON = "leftButton";
-export const RIGHT_BUTTON = "rightButton";
+export const UP_BUTTON = "ArrowUp";
+export const DOWN_BUTTON = "ArrowDown";
+export const LEFT_BUTTON = "ArrowLeft";
+export const RIGHT_BUTTON = "ArrowRight";
 
 export const keyBindings = [
   [UP_BUTTON, TEAM],
