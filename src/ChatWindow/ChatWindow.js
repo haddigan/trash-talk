@@ -9,7 +9,12 @@ export const ChatWindow = ({ content = [] }) => {
   }, [content]);
 
   return (
-    <div className={styles.chatWindow}>
+    <div
+      className={styles.chatWindow}
+      role="region"
+      aria-label="chat window"
+      aria-live="polite"
+    >
       <div className={styles.chatList}>
         {content.map(({ name, text, id, isStatusMessage }) => (
           <div key={id} ref={chatWindowRef}>
